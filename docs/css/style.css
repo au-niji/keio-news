@@ -1,6 +1,7 @@
 /*ヘッダーまわりはサイトに合わせて調整してください*/
 header {
   padding:10px;
+  /* position: relative; */
   /* background: skyblue; */
 }
 
@@ -60,7 +61,7 @@ header {
   top: 0;
   left: 0;
   z-index: 9999;/*最前面に*/
-  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  width: 60%;/*右側に隙間を作る（閉じるカバーを表示）*/
   max-width: 330px;/*最大幅（調整してください）*/
   height: 100%;
   background: #fff;/*背景色*/
@@ -68,6 +69,8 @@ header {
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);/*左に隠しておく*/
   color: black;
+  font-size: 150%;
+  letter-spacing: 3px;	/*文字と文字の間隔をあける*/
 }
 
 /*チェックが入ったらもろもろ表示*/
@@ -80,4 +83,9 @@ header {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);/*中身を表示（右へスライド）*/
   box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+li {
+    border-bottom: 1px solid silver;	/*下部の線の色を指定*/
+    margin: 10px; padding: 10px;
 }
