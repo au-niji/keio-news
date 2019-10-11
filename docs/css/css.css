@@ -13,13 +13,13 @@ border-style:none;
 }
 
 a{
-	color:blue;
+	color:black;
 	/*-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;*/
 }
 a:visited{
-	color:white;
+	color:black;
 	/*-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;*/
@@ -85,7 +85,7 @@ header p{
 }
 
 /*****NAV*****/
-nav{
+ nav{ 
 	width: 100%;	/*横幅の指定*/
 	max-width: 100%;
 	border-top: 1px solid blue;	/*上部の線の色を指定*/
@@ -155,29 +155,29 @@ article .date{
 	font-size: 50%;	/*文字サイズの指定*/
 	color: orange;	/*文字色の指定*/
 	border: 1px solid orange;	/*線を描く*/
-	padding-top:3px;	/*文字上部の余白指定*/
+	padding-top:1px;	/*文字上部の余白指定*/
 	padding-bottom: 3px;	/*文字下部の余白指定*/
-	padding-right: 6px;	/*文字右側の余白指定*/
-	padding-left: 6px;	/*文字左側の余白指定*/
-	letter-spacing: 5px;	/*文字と文字の間隔をあける*/
+	padding-right: 3px;	/*文字右側の余白指定*/
+	padding-left: 3px;	/*文字左側の余白指定*/
+	letter-spacing: 2px;	/*文字と文字の間隔をあける*/
 	float: left;	/*フロートする*/
 }
 article h1{
 	width: 100%;	/*横幅の指定*/
-	font-size: 150%;	/*フォントサイズの指定*/
+	font-size: 100%;	/*フォントサイズの指定*/
 	color: #313131;	/*文字色の変更*/
 	letter-spacing: 3px;	/*文字と文字の間隔をあける*/
-	padding-bottom:2px;	/*文字下部の余白指定*/
-	padding-top: 10px; /*文字上部の余白指定*/
+	padding-bottom:1px;	/*文字下部の余白指定*/
+	padding-top: 5px; /*文字上部の余白指定*/
 	border-bottom: 1px solid #bababa;	/*文字の下部に線を描く*/
-	margin-bottom: 15px;	/*セクションタイトルの下に余白をつくる*/
+	margin-bottom: 2px;	/*セクションタイトルの下に余白をつくる*/
 	float: left;	/*フロートする*/
 }
 article p{
 	font-size: 100%;	/*フォントサイズの指定*/
 	color: #313131;	/*文字色の変更*/
-	letter-spacing: 3px;	/*文字と文字の間隔をあける*/
-	line-height: 200%;	/*行間をあける*/
+	letter-spacing: 2px;	/*文字と文字の間隔をあける*/
+	line-height: 150%;	/*行間をあける*/
 	margin-bottom: 10px;	/*文字とボタンの間をあける*/
 	float: left;	/*フロートする*/
 }
@@ -237,4 +237,48 @@ img.row_icon {
 img.xkaiken_icon {
 	width: 300px;
 	height: 200px;
+}
+
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+ 
+li {
+  list-style: none;
+}
+ 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ 
+#menu {
+  position: fixed;
+  top: 0;
+  right: -340px; /* メニューのwidth + padding */
+  width: 300px; /* メニューのwidth */
+  height: 100%;
+  padding: 20px;
+  transition: left .5s, right .5s; /* アニメーション */
+  background-color: rgba(86, 86, 86, .7);
+}
+ 
+.toggle {
+  font-size: 50px;
+  cursor: pointer;
+}
+ 
+.toggle:hover {
+  text-decoration: underline;
+}
+ 
+#open {
+  display: none;
+}
+ 
+/* :checked 擬似クラスを使って、#openがチェック状態になった時に、#menuが「right: 0;」になります。 */
+#open:checked + #menu {
+  right: 0;
 }
