@@ -66,7 +66,7 @@ header p{
 	/* max-width: 100%; */
 	/* margin-left: 20%; 左端から20%右側に動かす */
 	height: auto;
-	background-color: #f9f9f9; /*背景色の指定*/
+	background-color: white; /*背景色の指定*/
 	margin-bottom: 5px;
 	overflow: hidden; /*おまじない*/
 	position: relative;
@@ -88,26 +88,29 @@ header p{
 nav{
 	width: 100%;	/*横幅の指定*/
 	max-width: 100%;
-	border-top: 1px solid blue;	/*上部の線の色を指定*/
-	border-bottom: 1px solid blue;	/*下部の線の色を指定*/
-	margin-bottom: 5px;
+	/* border-top: 1px solid blue;	上部の線の色を指定 */
+	/* border-bottom: 1px solid blue;	下部の線の色を指定 */
+	margin-bottom: 10px;
 	overflow: hidden;	/*おまじない*/
-	background: blue;
+	background: cornflowerblue;
 }
 nav ul{
-	width: 80%;	/*横幅の指定*/
-	margin: auto;	/*中央に配置する*/
+	width: 100%;	/*横幅の指定*/
+	margin: 0px;	/*中央に配置する*/
 	list-style: none; /*リストのスタイルを削除*/
+	overflow: auto;
+	white-space: nowrap;
 }
 nav li{
-	width: calc(100% / 3);	/*横幅の指定*/
-	border-left: 1px solid blue;	/*線を描く*/
+	width: 20%;	/*横幅の指定*/
+	border-left: 1px solid white;	/*線を描く*/
 	box-sizing: border-box; /*線の幅をliの横幅に含める*/
 	text-align: center;	/*文字を中央に*/
-	float: left;	/*左から並べる*/
+	display: inline-block;
+	font-size: 400%;
 }
 nav li:last-child{
-	border-right: 1px solid blue;	/*li要素の最後の物は右側に線を描く*/
+	border-right: 1px solid white;	/*li要素の最後の物は右側に線を描く*/
 }
 nav a{
 	display: block;	/*1つのli全体にリンクを有効にする*/
@@ -115,9 +118,10 @@ nav a{
 	color: black;	/*文字色の変更*/
 	font-size: 20%;	/*フォントサイズの指定*/
 	letter-spacing: 0px;	/*文字と文字の間隔をあける*/
-	font-weight: 100px;	/*文字の太さを調整*/
-	line-height: 30px;	/*行間の指定（ナビボタンの高さ指定）*/
+	/* font-weight: 100px;	文字の太さを調整 */
+	/* line-height: 30px;	行間の指定（ナビボタンの高さ指定） */
 }
+
 nav a:hover{
 	background-color: orange;	/*背景色の指定*/
 	color: #fff;	/*文字色の変更*/
@@ -132,6 +136,7 @@ nav a:hover{
 	text-align: center;
 }
 
+/*****ARTICLE*****/
 /*****ARTICLE*****/
 section{
 	display: block;
@@ -155,29 +160,29 @@ article .date{
 	font-size: 50%;	/*文字サイズの指定*/
 	color: orange;	/*文字色の指定*/
 	border: 1px solid orange;	/*線を描く*/
-	padding-top:3px;	/*文字上部の余白指定*/
+	padding-top:1px;	/*文字上部の余白指定*/
 	padding-bottom: 3px;	/*文字下部の余白指定*/
-	padding-right: 6px;	/*文字右側の余白指定*/
-	padding-left: 6px;	/*文字左側の余白指定*/
-	letter-spacing: 5px;	/*文字と文字の間隔をあける*/
+	padding-right: 3px;	/*文字右側の余白指定*/
+	padding-left: 3px;	/*文字左側の余白指定*/
+	letter-spacing: 2px;	/*文字と文字の間隔をあける*/
 	float: left;	/*フロートする*/
 }
 article h1{
 	width: 100%;	/*横幅の指定*/
-	font-size: 150%;	/*フォントサイズの指定*/
+	font-size: 100%;	/*フォントサイズの指定*/
 	color: #313131;	/*文字色の変更*/
 	letter-spacing: 3px;	/*文字と文字の間隔をあける*/
-	padding-bottom:2px;	/*文字下部の余白指定*/
-	padding-top: 10px; /*文字上部の余白指定*/
+	padding-bottom:1px;	/*文字下部の余白指定*/
+	padding-top: 5px; /*文字上部の余白指定*/
 	border-bottom: 1px solid #bababa;	/*文字の下部に線を描く*/
-	margin-bottom: 15px;	/*セクションタイトルの下に余白をつくる*/
+	margin-bottom: 2px;	/*セクションタイトルの下に余白をつくる*/
 	float: left;	/*フロートする*/
 }
 article p{
 	font-size: 100%;	/*フォントサイズの指定*/
 	color: #313131;	/*文字色の変更*/
-	letter-spacing: 3px;	/*文字と文字の間隔をあける*/
-	line-height: 200%;	/*行間をあける*/
+	letter-spacing: 2px;	/*文字と文字の間隔をあける*/
+	line-height: 150%;	/*行間をあける*/
 	margin-bottom: 10px;	/*文字とボタンの間をあける*/
 	float: left;	/*フロートする*/
 }
