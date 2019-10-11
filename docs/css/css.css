@@ -14,15 +14,15 @@ border-style:none;
 
 a{
 	color:blue;
-	-webkit-transition: all 0.5s;
+	/*-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
-	transition: all 0.5s;
+	transition: all 0.5s;*/
 }
 a:visited{
 	color:white;
-	-webkit-transition: all 0.5s;
+	/*-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
-	transition: all 0.5s;
+	transition: all 0.5s;*/
 }
 a:hover {
 	color: #F5A862;
@@ -67,7 +67,7 @@ header p{
 	/* margin-left: 20%; 左端から20%右側に動かす */
 	height: auto;
 	background-color: #f9f9f9; /*背景色の指定*/
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	overflow: hidden; /*おまじない*/
 	position: relative;
 }
@@ -95,12 +95,12 @@ nav{
 	background: blue;
 }
 nav ul{
-	width: 60%;	/*横幅の指定*/
+	width: 80%;	/*横幅の指定*/
 	margin: auto;	/*中央に配置する*/
 	list-style: none; /*リストのスタイルを削除*/
 }
 nav li{
-	width: calc(100% / 4);	/*横幅の指定*/
+	width: calc(100% / 3);	/*横幅の指定*/
 	border-left: 1px solid blue;	/*線を描く*/
 	box-sizing: border-box; /*線の幅をliの横幅に含める*/
 	text-align: center;	/*文字を中央に*/
@@ -113,10 +113,10 @@ nav a{
 	display: block;	/*1つのli全体にリンクを有効にする*/
 	text-decoration: none;	/*ブラウザ標準のリンク装飾をオフに*/
 	color: black;	/*文字色の変更*/
-	font-size: 50%;	/*フォントサイズの指定*/
-	letter-spacing: 5px;	/*文字と文字の間隔をあける*/
-	font-weight: 400;	/*文字の太さを調整*/
-	line-height: 45px;	/*行間の指定（ナビボタンの高さ指定）*/
+	font-size: 20%;	/*フォントサイズの指定*/
+	letter-spacing: 0px;	/*文字と文字の間隔をあける*/
+	font-weight: 100px;	/*文字の太さを調整*/
+	line-height: 30px;	/*行間の指定（ナビボタンの高さ指定）*/
 }
 nav a:hover{
 	background-color: orange;	/*背景色の指定*/
@@ -128,7 +128,7 @@ nav a:hover{
 
 /* 広告 */
 #maple {
-	/* max-width: 100%; */
+	max-width: 100%;
 	text-align: center;
 }
 
@@ -141,19 +141,18 @@ section{
 	margin: 20px auto; /*上下20px 左右中央*/
 	overflow: hidden;
 }
+
 article{
-	width: calc(50% - 15px);	/*横幅の指定*/
+	width: calc(100% - 15px);	/*横幅の指定*/
 	padding: 2.5%;	/*余白の指定*/
-	margin-bottom: 30px;
+	margin-bottom: 5px;
 	background-color: #f9f9f9;	/*背景色の指定*/
 	overflow: hidden;	/*おまじない*/
 	float: left;	/*フロートする*/
 }
-article:nth-child(2n){
-	margin-left: 30px; /*2の倍数の記事は左側に余白を30px*/
-}
+
 article .date{
-	font-size: 60%;	/*文字サイズの指定*/
+	font-size: 50%;	/*文字サイズの指定*/
 	color: orange;	/*文字色の指定*/
 	border: 1px solid orange;	/*線を描く*/
 	padding-top:3px;	/*文字上部の余白指定*/
