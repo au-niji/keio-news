@@ -108,7 +108,7 @@ nav ul{
 }
 nav li{
 	width: 20%;	/*横幅の指定*/
-	border-left: 1px solid white;	/*線を描く*/
+	border-left: 1px solid white;
 	box-sizing: border-box; /*線の幅をliの横幅に含める*/
 	text-align: center;	/*文字を中央に*/
 	display: inline-block;
