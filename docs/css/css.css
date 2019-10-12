@@ -223,7 +223,7 @@ footer{
 	background-color: white;	/*背景色の指定*/
 }
 footer address{
-	color: #fff;	/*文字色の指定*/
+	/* color: #fff;	文字色の指定 */
 	letter-spacing: 5px;	/*文字と文字の間隔をあける*/
 	font-style: normal; /*文字の斜体を取り消す*/
 }
@@ -292,3 +292,8 @@ a {
   right: 0;
 }
 
+
+/* ニュースデータ */
+.news_data {
+	color: black;
+}
