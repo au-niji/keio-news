@@ -1,0 +1,25 @@
+footer {
+    border-top: 1px solid silver;
+    width: 80%;
+    margin-left: 10%;
+	background-color: white;
+	color: black;
+	text-align: center;
+	padding: 30px 0;
+    bottom: 0; /*下に固定*/
+}
+
+.footer_list {
+    color: silver;
+}
+
+.wrapper{
+    min-height: 100vh;
+    position: relative;/*←相対位置*/
+    padding-bottom: 120px;/*←footerの高さ*/
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+address {
+    color: silver;
+}
