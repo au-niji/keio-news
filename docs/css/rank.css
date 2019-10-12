@@ -1,0 +1,14 @@
+.rank {
+    overflow: hidden;
+}
+
+.rank #top {
+    color: black;
+    /* width: calc(100% - 15px);	横幅の指定 */
+	padding-left: 5%;	/*余白の指定*/
+	margin-bottom: 5px;
+    overflow: hidden;	/*おまじない*/
+    margin: 20px auto; /*上下20px 左右中央*/
+    font-size: 100%;
+
+}

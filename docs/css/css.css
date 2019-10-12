@@ -136,7 +136,7 @@ nav a:hover{
 }
 
 /* 広告 */
-#maple {
+.maple {
 	max-width: 100%;
 	text-align: center;
 }
@@ -144,16 +144,17 @@ nav a:hover{
 /*****ARTICLE*****/
 section{
 	display: block;
-	width: 80%;
+	width: 100%;
 	max-width: 80%;
-	max-height: 70%;
+	/* max-height: 70%; */
 	margin: 20px auto; /*上下20px 左右中央*/
-	overflow: hidden;
+	/* overflow: hidden; */
+	/* margin-bottom: 30px; */
 }
 
 article{
 	width: calc(100% - 15px);	/*横幅の指定*/
-	padding: 2.5%;	/*余白の指定*/
+	padding: 5%;	/*余白の指定*/
 	margin-bottom: 5px;
 	background-color: #f9f9f9;	/*背景色の指定*/
 	overflow: hidden;	/*おまじない*/
@@ -171,6 +172,7 @@ article .date{
 	letter-spacing: 2px;	/*文字と文字の間隔をあける*/
 	float: left;	/*フロートする*/
 }
+
 article h1{
 	width: 100%;	/*横幅の指定*/
 	font-size: 100%;	/*フォントサイズの指定*/
